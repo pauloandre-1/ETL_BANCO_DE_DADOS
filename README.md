@@ -62,11 +62,6 @@ Toda a execução é envolvida em um bloco `try/except` que captura erros de `SQ
    ```
    O script vai extrair os dados de `VENDA`, calcular o faturamento e inserir os resultados em `LUCRO`, exibindo os DataFrames no console em cada etapa.
 
-## 📌 Observações
-
-- O script `BANCO_DADOS_VENDAS.sql` contém um erro de digitação (`CREATE DATABESE` em vez de `CREATE DATABASE`) — corrija antes de executar.
-- Rodar o ETL mais de uma vez sobre os mesmos dados vai duplicar os registros em `LUCRO`, pois a carga usa `if_exists="append"` sem checagem de duplicidade.
-
 ## 🚧 Próximos passos
 
 - Adicionar uma periodização ao processo de ETL.
